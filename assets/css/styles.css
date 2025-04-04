@@ -1,0 +1,88 @@
+/* Fuente y colores base */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+/* Estilos para los encabezados */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+}
+
+/* Estilos para los enlaces */
+a {
+    color: #66b2ff;
+}
+
+a:hover {
+    color: #99ccff;
+}
+
+/* Personalización de las tarjetas */
+.card {
+    border: none;
+    border-radius: 10px;
+}
+
+/* Sombra en la navbar para dar profundidad */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+/* Espaciado extra en secciones */
+section {
+    margin-bottom: 2rem;
+}
+
+/* Estilos para portafolio */
+
+/* Para mantener los encabezados blancos en index.html */
+.right-section h2,
+.right-section h4 {
+  color: #000000;
+}
+
+
+/* La sección izquierda ocupa el 50% y se hace scroll normalmente */
+.left-section {
+    background-color: #121212;
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 2rem;
+    margin-right: 50%;
+  }
+  
+  /* La sección derecha se fija en la vista, centrada verticalmente */
+  .right-section {
+    background-color: #f8f9fa;
+    color: #212529;
+    width: 50%;
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    padding: 2rem;
+  }
+  
+  /* Ajuste de imagen para las tarjetas */
+  .card img {
+    object-fit: cover;
+    height: 150px; /* Altura reducida */
+  }
+  
+  /* Tamaño de la tarjeta reducido */
+  .card {
+    max-width: 100%;
+  }
+  
+  /* Estilo para la imagen de perfil */
+  .profile-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #121212;
+  }
+  
