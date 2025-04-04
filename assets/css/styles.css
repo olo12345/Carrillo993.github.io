@@ -24,6 +24,7 @@ a:hover {
 .card {
     border: none;
     border-radius: 10px;
+    max-width: 100%;
 }
 
 /* Sombra en la navbar para dar profundidad */
@@ -44,7 +45,6 @@ section {
   color: #000000;
 }
 
-
 /* La sección izquierda ocupa el 50% y se hace scroll normalmente */
 .left-section {
     background-color: #121212;
@@ -52,10 +52,10 @@ section {
     min-height: 100vh;
     padding: 2rem;
     margin-right: 50%;
-  }
-  
-  /* La sección derecha se fija en la vista, centrada verticalmente */
-  .right-section {
+}
+
+/* La sección derecha se fija en la vista, centrada verticalmente */
+.right-section {
     background-color: #f8f9fa;
     color: #212529;
     width: 50%;
@@ -64,25 +64,33 @@ section {
     right: 0;
     transform: translateY(-50%);
     padding: 2rem;
-  }
-  
-  /* Ajuste de imagen para las tarjetas */
-  .card img {
+}
+
+/* Ajuste de imagen para las tarjetas */
+.card img {
     object-fit: cover;
     height: 150px; /* Altura reducida */
-  }
-  
-  /* Tamaño de la tarjeta reducido */
-  .card {
-    max-width: 100%;
-  }
-  
-  /* Estilo para la imagen de perfil */
-  .profile-img {
+}
+
+/* Estilo para la imagen de perfil */
+.profile-img {
     width: 150px;
     height: 150px;
     object-fit: cover;
     border-radius: 50%;
     border: 3px solid #121212;
-  }
-  
+}
+
+/* RESPONSIVE: Para pantallas pequeñas (ej. móviles) */
+@media (max-width: 768px) {
+    .right-section {
+        position: static;
+        transform: none;
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .left-section {
+        margin-right: 0;
+    }
+}
