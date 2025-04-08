@@ -66,20 +66,51 @@ section {
     padding: 2rem;
 }
 
-/* Ajuste de imagen para las tarjetas */
+/* Imágenes de las tarjetas: tamaño base para móvil */
 .card img {
     object-fit: cover;
-    height: 150px; /* Altura reducida */
-}
-
-/* Estilo para la imagen de perfil */
-.profile-img {
+    height: 150px;
+  }
+  
+  /* A partir de tablets (>=768px), un poco más altas */
+  @media (min-width: 768px) {
+    .card img {
+      height: 200px;
+    }
+  }
+  
+  /* A partir de escritorio (>=1200px), aún más altas */
+  @media (min-width: 1200px) {
+    .card img {
+      height: 250px;
+    }
+  }
+  
+  /* Imagen de perfil: tamaño base */
+  .profile-img {
     width: 150px;
     height: 150px;
     object-fit: cover;
     border-radius: 50%;
     border: 3px solid #121212;
-}
+  }
+  
+  /* Tablets */
+  @media (min-width: 768px) {
+    .profile-img {
+      width: 180px;
+      height: 180px;
+    }
+  }
+  
+  /* Escritorio */
+  @media (min-width: 1200px) {
+    .profile-img {
+      width: 220px;
+      height: 220px;
+    }
+  }
+  
 
 /* RESPONSIVE: Para pantallas pequeñas (ej. móviles) */
 @media (max-width: 768px) {
